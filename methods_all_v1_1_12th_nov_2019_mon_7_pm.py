@@ -164,7 +164,7 @@ def train_model(X_train,X_test,y_train,y_test,X,y,algo,df):
     model.fit(X_train,y_train)
     feat_importances = pd.Series(model.feature_importances_, index=X.columns)
     print(feat_importances)
-    print(feat_importances.nlargest(4).plot(kind='barh'))
+#     print(feat_importances.nlargest(4).plot(kind='barh'))
 
     #print("\n New important variabels: \n',model.feature_importances_)
     pred = model.predict(X_test)

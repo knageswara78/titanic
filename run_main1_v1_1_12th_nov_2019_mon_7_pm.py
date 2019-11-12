@@ -4,18 +4,18 @@ from datetime import datetime
 import os
 
 ################################################### 1. Declare global variables ############################################
-path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\logs\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
-
+#path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\logs\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
+path = '/dm_offshore/Modules/projects/sample'
 
 ################################################### 1. Import libraries ###################################################
-os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample")
+#os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample")
 from methods_all_v1_1_12th_nov_2019_mon_7_pm import *
 
-os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\output\results")
-msg = "\n ######################################## Import libraries completed ########################################\n"
-file_name = 'myapp.log'
-path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\results\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
-# log_to_file(msg,file_name,path)
+# os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\output\results")
+# msg = "\n ######################################## Import libraries completed ########################################\n"
+# file_name = 'myapp.log'
+# path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\results\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
+# # log_to_file(msg,file_name,path)
 
 
 ################################################### Supress warnings ###################################################
@@ -29,7 +29,7 @@ path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\re
 
 ################################################### 1. Loading data ###################################################
 
-os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\input")
+# os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\input")
 train_df = read_file('train')
 test_df = read_file('test')
 combine = [train_df, test_df]
@@ -104,9 +104,9 @@ df = train_df
 
 cat_cols,num_cols = separate_numeric_categoric(train_df)
 
-path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\results\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
+# path = 'C:\\Users\\sunitha G\\dm_offshore\\Modules\\projects\\sample\\output\\results\\'+datetime.now().strftime("%d_%B_%Y_%H_%M_%S")+'.log'
 
-os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\output\results")
+# os.chdir(r"C:\Users\sunitha G\dm_offshore\Modules\projects\sample\output\results")
 
 log_to_file("\n ########################################  Categorical columns #######################################\n",'myapp.log',path)
 log_to_file(cat_cols,'myapp.log',path)
