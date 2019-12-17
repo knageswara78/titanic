@@ -1,0 +1,44 @@
+
+1)
+011_a_flow_preprocess_non_interactive_v_0_2.ipynb
+Uncomment line 2
+comment line 3.
+
+2)
+
+102_log_to_file.ipynb
+ change paramether path 
+ 
+3)
+ 
+ i) Load and run file,'000_create_directories.ipynb'  where a project need to be created.
+     Enter your project_name like = 'my_project_1'
+ ii) Upload your csv file to input folder. or mention table name to read from DB.
+ iii) Upload 3 files 001_setup_path.ipynb,012_feature_eng_training_set__v0_7_02_Dec_2019.ipynb,013_model_training_set__v0_7_02_Dec_2019.ipynb
+      into code/methods folder
+ iv)  Update file,'001_setup_path.ipynb' (under methods)
+       Enter project_name mentioned in step i.  
+  v)    Updatte file 012_feature_eng_training_set__v0_7_02_Dec_2019.ipynb
+      df_name = 'df.csv' # 'fd.csv' 'df.csv' #
+      target = 'Survived'  # 'fd_taken'   'Survived'
+	  algo = 'LR' # RF LR NB SV 
+	  
+	  
+vi)   Updatte file 013_model_training_set__v0_7_02_Dec_2019.ipynb
+      df_name = 'df.csv' # 'fd.csv' 'df.csv' #
+      target = 'Survived'  # 'fd_taken'   'Survived'
+	  algo = 'LR' # RF LR NB SV all
+	  
+	  
+	  New algo to add:
+	  123_train_model.ipynb
+      101_imports.ipynb
+	  012_feature_eng_training_set__v0_7_02_Dec_2019.ipynb
+	  013_model_training_set__v0_7_02_Dec_2019.ipynb
+
+
+
+
+
+
+
